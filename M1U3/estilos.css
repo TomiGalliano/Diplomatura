@@ -1,0 +1,35 @@
+h1{
+    color: red;
+    background-color: black;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2{
+    color: blue;
+    font-size: 25px;
+    font-style: italic;
+}
+
+
+.ubicacion{
+    color: green;
+    font-size: 20px;
+    font-family: arial
+}
+
+.series{
+    color: aqua;
+    font-style: arial;
+}
+
+.peliculas{
+    color: blueviolet;
+    
+}
+
+h3{
+    color: yellow;
+    background-color: black;
+    text-transform: uppercase;
+}
