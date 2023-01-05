@@ -33,3 +33,20 @@ h3{
     background-color: black;
     text-transform: uppercase;
 }
+.caja{
+    width: 300px;
+    height: 300px;
+    background: #f0e3e3;
+    background: linear-gradient(90deg,#f0e3e3 0%, #231099 20%);
+    background: -webkit-linear-gradient(90deg,#f0e3e3 0%, #231099 20%);
+    background: -moz-linear-gradient(90deg,#f0e3e3 0%, #231099 20%);
+    box-shadow: 15px 10px 5px black;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.texto{
+    background-color: #231099;
+    column-count: 3;
+    column-gap: 30px;
+}
