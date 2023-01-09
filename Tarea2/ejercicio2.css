@@ -1,0 +1,30 @@
+.contenedor{
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    border-style: solid;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.caja1{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    font-size: 10px
+}
+
+.caja2{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    font-size: 10px;
+}
+
+.caja3{
+    background-color:green;
+    width: 100px;
+    height: 100px;
+    font-size: 10px;
+}
