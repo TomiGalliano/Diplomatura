@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const numeros = ['12', '2', '73', '45', '65', '36', '77', '8', '55'];
+        let may = 0;
+        for (let i = 0; i < numeros.length; i++) {
+            if (numeros[i] > may) {
+                may = numeros[i]
+            }
+        }
+        console.log(`El mayor es` + may);
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const distancia = prompt(' ingrese la distancia recorrida:', '');
+        if (distancia <= 1000) {
+            document.write(`El recorrido fue a pie.`);
+        } else if (distancia > 1000 && distancia <= 10000) {
+            document.write(`El recorrido fue en bicicleta.`);
+        } else if (distancia > 10000 && distancia <= 30000) {
+            document.write(`El recorrido fue en colectivo.`);
+        } else if (distancia > 30000 && distancia <= 100000) {
+            document.write(`El recorrido fue en auto.`);
+        } else if (distancia > 100000) {
+            document.write(`El recorrido fue en avion`);
+        }
+
+    </script>
+
+</body>
+
+</html>
