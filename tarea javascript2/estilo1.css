@@ -1,0 +1,36 @@
+.cuadrados{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.cuadrado1{
+    width: 200px;
+    height: 200px;
+    background: red;
+    cursor: pointer;
+}
+
+.cuadrado2{
+    width: 200px;
+    height: 200px;
+    background: green;
+    cursor: pointer;
+}
+
+.cuadrado3{
+    width: 200px;
+    height: 200px;
+    background: yellow;
+    cursor: pointer;
+}
+
+
+.cuadrado1 {
+    background: blue;
+
+}
+
+.alternar.activo{
+    background: orange;
+}

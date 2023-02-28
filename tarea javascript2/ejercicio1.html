@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo1.css">
+    <title>tarea</title>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="cuadrados">
+            <div class="cuadrado1"> CUADRADO1</div>
+            <div class="cuadrado2"> CUADRADO2</div>
+            <div class="cuadrado3"> CUADRADO3</div>
+        </div>
+    </div>
+    <script>
+        const alternar = document.getElementsByClassName('cuadrado1')[0];
+        alternar.addEventListener('click', function(e) {
+            e.currentTarget.classlit.toggle('activo');
+        });
+    </script>
+</body>
+</html>
