@@ -14,8 +14,9 @@ import Contacto from './paginas/Contactos';
 function App() {
   return (
     <div className="App">
-      <Header/>
+
       <BrowserRouter>
+      <Header/>
       <Nav/>
       <Routes>
         <Route path="/" element={<Home/>}/>
