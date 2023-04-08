@@ -1,3 +1,5 @@
+import '../estilos/contacto.css'
+
 const Contacto = (props) => {
     return(
         <main class="holder contacto">

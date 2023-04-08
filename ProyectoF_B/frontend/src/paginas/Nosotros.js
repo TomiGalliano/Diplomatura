@@ -1,4 +1,5 @@
 import Header from "../componentes/layout/Header"
+import '../estilos/nosotros.css'
 
 const Nosotros = (props) => {
     return(

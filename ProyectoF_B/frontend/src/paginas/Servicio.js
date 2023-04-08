@@ -1,3 +1,5 @@
+import '../estilos/servicio.css'
+
 const Servicio = (props) => {
     return(
 <main class="holder">

@@ -1,0 +1,58 @@
+.contenedor1{
+    display: block;
+    text-align:center ;
+    border: solid;
+    border-color: lightgray;
+    background: snow;
+}
+
+.quien{
+    color: darkblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.quienessomos{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 5%;
+}
+
+.staff{
+    text-align: center;
+    margin: 20px;
+    border: solid;
+    padding: 20px;
+    border-color: lightgray;
+    background: snow;
+    border-radius: 5px;
+}
+
+.palabra{
+    color: darkblue;
+}
+
+.persona{
+    border: solid;
+    border-radius: 5px;
+    width: 32%;
+    text-align: center;
+    padding: 13px;
+    box-sizing: border-box;
+    background: gainsboro;
+    border-color: darkblue;
+}
+
+
+.persona img{
+    border-radius: 50%;
+    max-width: 60%;
+    box-shadow: 0 0 5px rgba( 0, 0, 0, 0.5);
+}
+
+.personas{
+    display: flex;
+    justify-content: space-between;
+}
+
+.parrafo{
+    font-size: 13px;
+} 

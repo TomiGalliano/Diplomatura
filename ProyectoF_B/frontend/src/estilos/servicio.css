@@ -1,0 +1,30 @@
+.contenedor {
+    text-align: center;
+}
+
+.servicios{
+  display: flex;
+  justify-content: space-between;
+}
+
+.servicio{
+    border: solid;
+    border-radius: 5px;
+    width: 32%;
+    text-align: center;
+    box-sizing: border-box;
+
+}
+
+h1.p1{
+    color: midnightblue;
+    padding-bottom:16px;
+}
+
+h2.pal{
+color: midnightblue;
+}
+
+.p2{
+    color: midnightblue;
+}

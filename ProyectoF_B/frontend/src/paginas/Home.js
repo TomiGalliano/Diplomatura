@@ -1,3 +1,5 @@
+import '../estilos/home.css'
+
 const Home = (props) => {
     return (
         <main class="holder">

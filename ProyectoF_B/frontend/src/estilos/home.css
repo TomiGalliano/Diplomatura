@@ -1,0 +1,36 @@
+nav ul li a.activo {
+    background-color: navy;
+}
+
+.holder {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.principal {
+    text-align: center;
+}
+
+.contenedor2{
+    background-color: darkblue;
+    color: white;
+    margin: 30px; 
+    display: block;
+    width: 930px;
+    
+    
+}
+
+h3.nosotros{
+    text-align: center;
+    display: block;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+
+p.quienes{
+    text-align: center;
+    font-size: 16px;
+    padding: 10%;
+    
+}

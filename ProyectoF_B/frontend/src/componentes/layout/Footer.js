@@ -1,3 +1,5 @@
+import '../../estilos/layout.css'
+
 const Footer = (Props) => {
     return (
         <footer>
