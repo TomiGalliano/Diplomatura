@@ -1,4 +1,4 @@
-import '../estilos/home.css'
+import '../estilos/home.css';
 
 const Home = (props) => {
     return (

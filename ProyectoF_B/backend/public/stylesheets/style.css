@@ -1,0 +1,22 @@
+body {
+  font-family: "Open Sand", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0%;
+  padding: 0%;
+}
+
+header {
+  padding:0%;
+  margin: 0;
+  text-align: center;
+  background: navy;
+}
+
+footer {
+  background-color: #ccc;
+  color: #333;
+  text-align: center;
+  padding: 50px;
+  margin-top: 20px;
+}

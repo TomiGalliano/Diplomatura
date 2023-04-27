@@ -1,4 +1,4 @@
-import '../estilos/servicio.css'
+import '../estilos/servicio.css';
 
 const Servicio = (props) => {
     return(
