@@ -3,19 +3,19 @@ var router = express.Router();
 var usuariosModel = require('./../../modelos/usuariosModel');
 /* GET home page. */
 router.get('/', function (req, res, next) {
-  res.render('index', {
+  res.render('adim/login',{
     layout: 'admin/layout'
   });
 });
 
-router.get('/logout', function (req, res, next) {
+router.get('/', function (req, res, next) {
   req.sessionID.destroy(),
   res.render('admin/login', {
     layout:'admin/layout'
   });
 });
 
-var usuariosModel = rquiere('./../../models/usuariosModel');
+
 
 router.post('/', async (req, res, next) => {
     try {
