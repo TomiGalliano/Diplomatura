@@ -12,10 +12,21 @@
                     <label for="">Subtitulo</label>
                     <input type="text" class="form-control" name="subtitulo" value="{{productos.subtitulo}}">
                 </div>
+                <div "form-group">
+                    <p>
+                        <label>Imagen: <input type="file" name="imagen" id="imagen" /></label>
+                    </p>
+                    <p>
+                        <label><input type="chekbox" name="img_delete" id="img_delete" value="1">
+                            Eliminar imagen actual?</label>
+                        <input type="hidden" name="img_original" value="{{producto.img_id}}">
+                    </p>
+                </div>
                 <div class="form-group">
                     <label for="">Cuerpo</label>
                     <textarea name="cuerpo" class="form-control">{{producto.cuerpo}}</textarea>
                 </div>
+
                 <button type="submit" class="btn btn_primary">Modificar</button>
             </form>
         </div>

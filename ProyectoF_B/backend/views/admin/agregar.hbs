@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-6 offset-3"></div>
         <h4>Agregar un nuevo producto</h4>
-        <form action="/admin/productos/agregar" method="post">
+        <form action="/admin/productos/agregar" method="post" enctype="multipart/form-data">
             <div class="mb-3 row">
                 <div class="col-sm-10">
                     <input type="text" class="form-control" id="inputUser" placeholder="Titulo" name="titulo">
@@ -13,6 +13,10 @@
                     <textarea type="text" class="form-control" id="inputUser" placeholder="Subtitulo"
                         name="subtitulo"></textarea>
                 </div>
+            <div class="mb-3 row">
+                <label>Imagen: <input type="file" class="form-control" name="imagen" id="imagen"></label>
+            </div>
+            
             </div>
             <div class="mb-3 row">
                 <div class="col-sm-10">

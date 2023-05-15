@@ -3,7 +3,7 @@ var router = express.Router();
 var usuariosModel = require('./../../modelos/usuariosModel');
 /* GET home page. */
 router.get('/', function (req, res, next) {
-  res.render('adim/login',{
+  res.render('admin/login',{
     layout: 'admin/layout'
   });
 });
