@@ -34,7 +34,7 @@ const Contacto = (props) => {
                 setFormdata(initialForm)
             }
         }
-    }
+    
 
 
     return(
@@ -70,5 +70,6 @@ const Contacto = (props) => {
         </div>
     </main>
     );
+}
 
 export default Contacto;
