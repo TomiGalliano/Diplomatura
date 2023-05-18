@@ -16,13 +16,13 @@ const Home = (props) => {
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="img/garantia1.jpg" class="d-block w-100" alt="garantia" />
-                            </div>
-                            <div class="carousel-item">
                                 <img src="img/garantia2.jpg" class="d-block w-100" alt="garantia" />
                             </div>
                             <div class="carousel-item">
                                 <img src="img/garantia4.jpg" class="d-block w-100" alt="garantia" />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/garantia1.jpg" class="d-block w-100" alt="garantia" />
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
