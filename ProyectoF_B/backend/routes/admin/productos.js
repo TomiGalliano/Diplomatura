@@ -57,7 +57,7 @@ router.post('/agregar', async (req, res, netx) => {
         ...req.body,
         img_id
       });
-      res.redirect('admin/productos')
+      res.redirect('/admin/productos')
     } else{
       res.render('admin/agregara',{
         layout: 'admin/layout' ,

@@ -21,7 +21,7 @@ const Nosotros = (props) => {
                 <h2 class="palabra">STAFF</h2>
                 <div class="personas">
                     <div class="persona">
-                        <img src="img/persona2.jpeg" alt="gerente"/>
+                        <img src="img/persona2.jpg" alt="gerente"/>
                         <h5>Eduardo Gentili</h5>
                         <h6>Presidente, CEO</h6>
                         <p class="parrafo">Contador Público(UBA),Licenciado en Economía(UBA),Master en Economia(UCEMA).Más de tres
@@ -30,7 +30,7 @@ const Nosotros = (props) => {
                             de Riesgo Financieros</p>
                     </div>
                     <div class="persona">
-                        <img src="img/persona1.jpeg" alt="gerente"/>
+                        <img src="img/persona1.jpg" alt="gerente"/>
                         <h5>Gonzalo Castañuela</h5>
                         <h6>Vicepresidente, Director de Negocios</h6>
                         <p class="parrafo">Licenciado en Administracion de Empresas.Más de dos décadas de experiencia en diferentes
@@ -39,7 +39,7 @@ const Nosotros = (props) => {
                             Analisis de Riesgo Crediticio.</p>
                     </div>
                     <div class="persona">
-                        <img src="img/persona3.jpeg" alt="gerente"/>
+                        <img src="img/persona3.jpg" alt="gerente"/>
                         <h5>Candela Depetris</h5>
                         <h6>Directora de Administracion</h6>
                         <p class="parrafo">Contadora Pública Nacional de la Univerdiad Nac. De La Plata.Master en Direccion
