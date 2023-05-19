@@ -33,16 +33,16 @@ app.use(session({
   saveUninitialized: true
 }))
 
-secured = async (req, res, next) => {
-  try {
+secured = async(req, res, next) => {
+  try{
     console.log(req.session.id_usuario);
-    if (req.session.id_usuario) {
-      next()
-    } else{
+    if (req.session.id_usuario){
+      next();
+    } else {
       res.redirect('/admin/login');
     }
-  } catch(error) {
-    console.log(error)
+  } catch(error){
+    console.log(error);
   }
 }
 
@@ -54,7 +54,7 @@ app.use(fileupload({
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/admin/login', loginRouter);
-app.use('admin/productos', secured, adminRouter)
+app.use('/admin/productos', secured, adminRouter)
 app.use('/api',cors() ,apiRouter);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

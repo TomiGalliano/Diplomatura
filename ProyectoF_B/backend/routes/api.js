@@ -4,16 +4,16 @@ var productosModel = require('./../modelos/productosModel');
 var cloudinary = require('cloudinary').v2;
 var nodemailer = require('nodemailer');
 
-router.get('/prodcutos', async function (req, res, next) {
+router.get('/productos', async function (req, res, next) {
 
     let productos = await productosModel.getProductos();
   
-    productos = productos.map(producto =>{
-      if(producto.img){
-        const imagen = cloudinary.image(producto.img, {
+    productos = productos.map(producto => {
+      if(producto.img_id) {
+        const imagen = cloudinary.url(producto.img_id, {
           width:960,
           height:200,
-          crop:"fill"
+          crop:'fill'
         });
         return {
           ...producto,
@@ -27,7 +27,7 @@ router.get('/prodcutos', async function (req, res, next) {
       }
     });
 
-    res.json(productos)
+    res.json(productos);
 });
 
 router.post('/contacto', async (req, res) => { 

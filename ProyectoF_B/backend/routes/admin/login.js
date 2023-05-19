@@ -3,13 +3,13 @@ var router = express.Router();
 var usuariosModel = require('./../../modelos/usuariosModel');
 /* GET home page. */
 router.get('/', function (req, res, next) {
-  res.render('admin/login',{
+  res.render('admin/login', {
     layout: 'admin/layout'
   });
 });
 
 router.get('/', function (req, res, next) {
-  req.sessionID.destroy(),
+  req.session.destroy(),
   res.render('admin/login', {
     layout:'admin/layout'
   });
@@ -27,17 +27,17 @@ router.post('/', async (req, res, next) => {
         if (data != undefined){
           req.session.id_usuario = data.id;
           req.session.nombre = data.usuario;
-          res.redirect('admin/producto');
+          res.redirect('/admin/productos');
         } else {
-          res.render('admin/login',{
+          res.render('admin/login', {
             layout: 'admin/layout',
             error: true 
-          })
+          });
         }
     } catch(error) {
       console.log(error);
     }
-});
+})
 
 
 module.exports = router;

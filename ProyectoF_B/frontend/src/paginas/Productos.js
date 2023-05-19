@@ -27,13 +27,13 @@ const Productos = (props) => {
                 loading ? (
                     <p>Cargando...</p>
                 ) : (
-                    productos,map(item => <productoItem key={item.id}
+                    productos.map(item => <productoItem key={item.id}
                         titlte ={item.titulo} subtitle={item.subtitulo}
                         imagen={item.imagen} body={item.cuerpo} />)
                 )
             }
         </section>
-    )
-};
+    );
+}
 
 export default Productos;

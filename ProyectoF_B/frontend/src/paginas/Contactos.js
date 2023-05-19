@@ -26,11 +26,11 @@ const Contacto = (props) => {
             e.preventDefault();
             setMsg('');
             setSending(true)
-            const responde = await
-            axios.post('https://localhost:3000/api/contacto', formData);
-            setSending(false)
-            setMsg(responde.data.message);
-            if (responde.data.error === false){
+            const response = await
+            axios.post('http://localhost:3000/api/contacto', formData);
+            setSending(false);
+            setMsg(response.data.message);
+            if (response.data.error === false){
                 setFormdata(initialForm)
             }
         }

@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
-var productosModel = require('../../modelos/productosModel');
+var productosModel = require('./../../modelos/productosModel');
 const util = require('util');
 const cloudinary = require('cloudinary').v2;
-const uplouder = util.promisify(cloudinary.uploader.upload);
+const uploader = util.promisify(cloudinary.uploader.upload);
 const destroy = util.promisify(cloudinary.uploader.destroy)
 
 /* GET home page. */
@@ -11,9 +11,9 @@ router.get('/', async function (req, res, next) {
 
   var productos = await productosModel.getProductos();
 
-  productos = productos.map(producto =>{
-    if(producto.img){
-      const imagen = cloudinary.image(producto.img, {
+  productos = productos.map(producto => {
+    if (producto.img) {
+      const imagen = cloudinary.image(producto.img_id, {
         width:100,
         height:100,
         crop:"fill"
@@ -38,18 +38,18 @@ router.get('/', async function (req, res, next) {
 });
 
 router.get('/agregar', (req, res, next) => {
-  res.render('admin/agregar',{
+  res.render('admin/agregar', {
     layout: 'admin/layout'
-  })
+  });
 });
 
 router.post('/agregar', async (req, res, netx) => {
   try {
 
     var img_id = '';
-    if (req.files && Object.keys(req.files).length > 0){
+    if (req.files && Object.keys(req.files).length > 0) {
       imagen = req.files.imagen;
-      img_id = (await uplouder(imagen.tempFilePath)).public_id;
+      img_id = (await uploader(imagen.tempFilePath)).public_id;
     }
 
     if (req.body.titulo != "" && req.body.subtitulo != "" && req.body.cuerpo != "") {
@@ -59,7 +59,7 @@ router.post('/agregar', async (req, res, netx) => {
       });
       res.redirect('/admin/productos')
     } else{
-      res.render('admin/agregara',{
+      res.render('admin/agregar',{
         layout: 'admin/layout' ,
         error : true,
         message: 'Todos los campos son requeridos'
@@ -71,9 +71,9 @@ router.post('/agregar', async (req, res, netx) => {
       layout:'admin/layout',
       error: true,
       message: 'no se cargo el producto.'
-    })
+    });
   }
-})
+});
 
 /*eliminar*/
 router.get('/eliminar/:id', async (req, res, next) =>{
@@ -85,7 +85,7 @@ router.get('/eliminar/:id', async (req, res, next) =>{
   }
 
   await productosModel.deleteProductosById(id);
-  res.redirect('admin/productos');
+  res.redirect('/admin/productos');
 })
 
 /*modificar*/
@@ -106,14 +106,14 @@ router.post('/modificar', async (req, res, next) => {
   try{
 
     let img_id = req.body.img_original;
-    let borrar_img_vieja = false
+    let borrar_img_vieja = false;
     if (req.body.img_delete === "1") {
       img_id = null;
       borrar_img_vieja = true;
     } else {
       if ( req.files && Object.keys(req.files).length > 0) {
         imagen = req.files.imagen;
-        img_id = (await uplouder(img.tempFilePath)).public_id;
+        img_id = (await uploader(img.tempFilePath)).public_id;
         borrar_img_vieja = true;
       }
     }
@@ -134,7 +134,7 @@ router.post('/modificar', async (req, res, next) => {
     res.redirect('/admin/productos');
   } catch(error) {
     console.log(error)
-    res.render('/admina/modificar',{
+    res.render('admin/modificar',{
       layout:'admin/layout',
       error: true,
       message: 'no se modifico el producto'
