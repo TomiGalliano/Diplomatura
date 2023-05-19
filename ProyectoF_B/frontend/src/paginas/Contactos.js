@@ -60,7 +60,7 @@ const Contacto = (props) => {
                 </p>
                 <p>
                     <label for="mensaje">Mensaje</label>
-                    <textarea name="mensjae" value={formData.mensaje} onChange={handleChange}></textarea>
+                    <textarea name="mensaje" value={formData.mensaje} onChange={handleChange}></textarea>
                 </p>
                 <p class="acciones"><input type="submit" value="Enviar" /></p>
             </form>
