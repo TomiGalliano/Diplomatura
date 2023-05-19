@@ -1,4 +1,4 @@
-const { log } = require('util');
+var util = require('util');
 var pool = require('./bd');
 
 async function getProductos() {
